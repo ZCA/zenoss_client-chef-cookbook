@@ -10,6 +10,7 @@ action :add do
         'DeviceRouter', 'addDevice', 
           [{:deviceName => @new_resource.name, 
           :deviceClass => new_resource.device_class,
+          :productionState => new_resource.productionState,
           :manageIp => get_ip,
           :collector => new_resource.collector,
           :comments => new_resource.comments

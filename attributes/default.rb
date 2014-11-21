@@ -41,6 +41,10 @@ default['zenoss']['client']['server'] = nil
 # you can also set zenoss's ssh public key with the following
 # default['zenoss']['client']['zenoss_pubkey'] = ""
 
+#The numeric value of the production state of the host.
+#prod = 1000, pre-prod=500, maintenance - 300 etc...
+default['zenoss']['client']['productionState'] = 1000
+
 # The HTTP port on which your Zenoss Server listening. This should
 # be used if youare running under Chef-solo, or for some other reason
 # are able to locate this via search. If this value is anything other
