@@ -11,6 +11,7 @@ attribute :api_protocol, :kind_of => String, :equal_to => ["http", "https"], :de
 attribute :wait_for, :kind_of => Integer, :default => 0
 attribute  :ip, :kind_of => String, :regex => /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/
 attribute :collector, :kind_of => String, :default => "localhost"
+attribute :productionState, :kind_of => Integer, :default => 1000
 attribute :device_class, :kind_of => String, :default => "/Devices/Server"
 attribute :comments, :kind_of => String, :default => ""
 
