@@ -14,4 +14,4 @@ attribute :collector, :kind_of => String, :default => "localhost"
 attribute :productionState, :kind_of => Integer, :default => 1000
 attribute :device_class, :kind_of => String, :default => "/Devices/Server"
 attribute :comments, :kind_of => String, :default => ""
-
+attribute :model, :kind_of => [TrueClass, FalseClass], :default => true

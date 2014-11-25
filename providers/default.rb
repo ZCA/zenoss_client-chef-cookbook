@@ -13,10 +13,11 @@ action :add do
           :productionState => new_resource.productionState,
           :manageIp => get_ip,
           :collector => new_resource.collector,
-          :comments => new_resource.comments
-          
+          :comments => new_resource.comments,
+          :model => new_resource.model
           }]
       )
+
       if new_device_rsp.has_key?("success") && new_device_rsp['success'] == true
         # At this point all we really know is that the Zenoss API 'accepted'
         # our request. Zenoss will do most of this work in the background
